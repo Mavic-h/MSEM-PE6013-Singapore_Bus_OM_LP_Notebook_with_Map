@@ -9,3 +9,29 @@ This notebook uses the Singapore bus dataset to perform an **Operations Manageme
 3. Build a runnable **ILP model** to allocate additional weekday departures under a limited bus-hour budget.  
 
 > Dataset source : Kaggle - Singapore Bus Data (Land Transport Authority)
+
+
+## Operations Management Interpretation
+
+### 1. Process analysis
+A bus route can be treated as a service process:  
+**dispatch → travel → stop servicing → arrival → turnaround**  
+
+### 2. Capacity
+For a route, capacity is constrained by:
+- service span
+- headway
+- trip time
+
+### 3. Bottleneck
+Potential bottlenecks are routes with:
+- long one-way trip time
+- many stops
+- relatively infrequent weekday service
+
+### 4. Lean waste
+Possible wastes include:
+- waiting
+- unnecessary route overlap
+- uneven workload (Mura)
+- overburden (Muri) on long routes
